@@ -6,7 +6,7 @@ if [ -f /var/tmp/results.$sub ]
 then
 	mv /var/tmp/results.$sub /var/tmp/results.$sub.prev
 fi
-az account set -s 7274c071-c869-42da-a02e-7f923a954964
+az account set -s subscription id
 az group list |grep name > /tmp/resgrplist
 for i in `cat /tmp/resgrplist`
 do 
